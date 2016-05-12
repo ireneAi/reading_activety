@@ -1,0 +1,42 @@
+/*
+	@ 2016/5/3
+	@ irene 
+ */ 
+@charset "utf-8";
+
+body{background: #fef7f0}
+/*坚果兑换记录*/
+.hository_main {width:956px;margin:0 auto;padding-top:20px;}
+.selector label{width:150px;display: inline-block;color:#323232;font-size: 14px;height: 30px;line-height: 30px;}
+.selector input{vertical-align: middle;margin-right: 5px;}
+.hository_list {width:952px;height: 73px;margin:15px auto;border:1px solid #e0dede;border-radius: 10px;box-shadow:0 2px  3px #999;background: #fff;}
+.hository_list dt {float: left;margin-right: 20px;height: 72px;width:74px;border-radius: 5px;overflow: hidden;}
+.hository_list dt img{height: 72px;width:74px;}
+.hository_list dd {font-size: 14px; height: 30px;line-height: 30px;display: block;}
+.hository_list .line1{font-size: 14px; height: 36px;line-height: 40px;display: block;overflow: hidden;}
+.hository_list .line1 strong{float: left;font-weight: normal;}
+.hository_list .line1 .right_text{float: right;}
+.hository_list .line1 .right_text span{display: inline-block;margin-right: 30px;color:#666;}
+.hository_list .line2{text-align: left;}
+.hository_list .line2 span{display: inline-block;margin-right: 30px;color:#666;}
+.hository_list dd img{vertical-align:middle;}
+
+/*
+@hository_list1:坚果转转转
+@hository_list2:我要当学霸
+@hository_list3:谢谢你的爱				
+@hository_list4:爱我么么哒	
+*/
+.hository_list1 dt{background: #c7ece4}
+.hository_list1 .line1 strong{color: #00ac8b}
+
+.hository_list2 dt{background: #d5eed3}
+.hository_list2 .line1 strong{color: #66be5b}
+
+.hository_list3 dt{background: #f9d9e9}
+.hository_list3 .line1 strong{color: #ec5394}
+
+.hository_list4 dt{background: #c7edfa}
+.hository_list4 .line1 strong{color: #00ade9}
+
+

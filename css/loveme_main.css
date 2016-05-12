@@ -1,0 +1,97 @@
+/*
+	@ 2016/5/3
+	@ irene 
+ */ 
+@charset "utf-8";
+
+body{background: #fef7f0}
+/*谢谢你的爱*/
+.loveme_main {width:925px;margin:0 auto;padding-top:20px;padding-bottom: 50px;}
+
+.return {text-align: right;color:#5c3b1f;font-size: 14px;height: 30px;line-height: 30px;}
+.return a{color:#5c3b1f;text-decoration: underline;}
+
+/*手机充值例表*/
+.card_list h2 {text-align: right;height: 35px;margin: 20px 0}
+.card_list .card {width:225px;height: 170px;display: inline-block;margin-right: 3px;}
+.card_list .card:last-child{margin-right: 0px;}
+.card_list .card dt{width:225px;background: url(../img/thinks/l-card_bc.png) no-repeat; height: 129px;}
+.card_list .card dt img {margin:36px 0 0 115px;}
+.card dd {color:#666;font-size: 14px;padding-top: 15px;}
+.card .card_num {float: left;display: inline-block;height: 26px;line-height: 26px;font-size: 12px;color: #969696}
+.card .convert_btn {display: inline-block;cursor:pointer;float: right;height: 26px;color:#fff;line-height:26px;padding:0 8px;background: url(../img/thinks/dh_btn.png) repeat-x;border-radius: 3px;margin-right: 16px;}
+.convert_btn img{display: inline-block;float: left}
+
+/*鲜花赠送例表*/
+.convert_list h2 {text-align: right;height: 35px;margin: 40px 0}
+.convert_list dl {width:206px;margin-right: 28px;display: inline-block;margin-bottom: 40px;}
+.convert_list dl:nth-child(4n){margin-right:0;}
+.convert_list dt {height: 204px;width:204px;background: #fff;border-radius: 5px;border:1px solid #f0e8d9;}
+.convert_list h3{white-space: nowrap;text-overflow:ellipsis;overflow:hidden;}
+.convert_list dt img{height: 204px;width:204px;}
+/*弹框样式*/
+.position_all {display:none;position: fixed;width:100%;height: 100%;left:0;top:0;right:0;bottom:0;background: rgba(0,0,0,.5);}
+.alert_convert {display:none;background:#fff;height: 566px;width:540px;position: fixed;top: 50%;left:50%;transform:translate(-50%,-50%);}
+.close_btn {position: absolute;right:-20px;top:-20px;height: 45px;width:45px;display: inline-block;background: url(../img/close_btn.png);cursor:pointer;}
+.q_ticon {background: url(../img/duihuanQQ.png) no-repeat top #f6f0eb;}
+.convert_body .qb {position:absolute;top: 214px;left: 238px;transform: scale(1.4);}
+.q_ticon .convert_body {padding-top:350px;}
+.q_ticon .item {padding-left:60px;color:#fff;font-size: 16px;height: 42px;line-height: 42px;}
+.q_ticon .item input{font-size:12px;padding-left:10px;width: 325px;height: 30px;line-height: 30px;margin-left: 20px;border-radius: 5px;box-shadow: 0 3px 5px #c9acb9 inset;}
+.q_ticon .error {height:40px;padding-top:5px;color:#af0004;padding-left: 150px;font-size: 14px;text-shadow:1px 0 1px #fff;}
+
+.btn_box {height: 75px;width:100%;text-align: center;}
+.btn_box .btn_convert{display:inline-block;margin:20px auto;cursor:pointer;color:#fff;font-size:20px;height: 40px;padding:0 20px;text-align: center;border-radius: 20px;background: linear-gradient(#ff8d00,#ff7600,#ff5a00);border:1px solid #db4300;box-shadow:1px 1px 3px #ff8938 inset,1px 1px 5px #555;}
+.btn_box .nut_img{display: inline;vertical-align: middle;}
+
+/*弹框内小弹框*/
+.inner_position {display:none;position: absolute;height: 100%;width:100%;background: rgba(255,255,255,.9);top:0;}
+.alert_result {display:none;box-shadow:5px 5px 5px #dcdcdc;width:390px;margin:50px auto;min-height:400px;position: relative;background: #f6f0eb}
+.alert_result h2 {border-radius:5px 5px 0 0;text-align:center;font-size:20px;color:#fff;height: 52px;line-height: 52px; background: linear-gradient(#fe7900,#d75301)}
+.result_body {padding:40px 0 20px;text-align: center;}
+/*Q币兑换成功弹框内容*/
+.result_body h3{color:#666;font-size: 18px;height: 42px;}
+.result_body h4{color:#f16700;font-size: 24px;height: 60px;font-weight: bold;}
+.result_body .qb_img{display: inline-block;width:152px;height: 196px;background: url(../img/qie.png);}
+.result_body .qb_img img{margin: 110px auto 0;}
+.result_body .know_btn{display:block;margin:40px auto 0;cursor:pointer;color:#fff;font-size:16px;line-height:30px;height: 35px;width:123px;text-align: center;border-radius: 3px;background: linear-gradient(#f16f1c,#cf3600);border:1px solid #db4300;box-shadow:1px 1px 3px #ff8938 inset;}
+/*实物兑换内容弹框*/
+.convert_sw_alert {height: 580px;}
+.convert_sw_alert .convert_body{ height: 580px;overflow:hidden;overflow-y: scroll;padding-bottom: 20px;background: #f6f0eb}
+.convert_sw_alert .btn_box .btn_convert {margin:20px;line-height: 35px;}
+.sp_img_list {font-size:14px;color: #fff;height: 465px;width: 523px;background: url(../img/duihuanLW.png) no-repeat;padding:10px;}
+.sp_img_list h3{padding:15px;height: 40px;}
+.sp_img_list .sp_mesaage {height: 40px;line-height: 20px;margin:15px 15px;}
+.sp_img_list .ms_text{height: 60px;overflow: :hidden;overflow-y:auto;margin: 0 5px 0 15px;padding-right: 5px;}
+.img_list {height: 260px;overflow:hidden;overflow-y:auto;width:539px; }
+.img_list span{display:inline-block;float:left;height: 246px;width:246px;margin-bottom:15px;background: rgba(255,255,255,.9);}
+.img_list span:nth-child(2n){margin-left: 10px;}
+.img_list span img{width:100%;height: 100%}
+.convert_input {margin:10px 30px;color: #969696;}
+.convert_input .text_input{font-size:12px;width: 100%;height: 30px;line-height: 30px;border-radius: 5px;box-shadow: 0 3px 5px #c9acb9 inset;}
+.num_input input{float:left;text-align:center;color: #999; display:inline-block;width:65px;height: 26px; border:1px solid #333;border-left:0;border-right:0;background: transparent;}
+.num_input span{cursor:pointer;float:left;text-align:center;display:inline-block;width:25px;height: 26px; border:1px solid #333;background: transparent;border-radius: 5px 0 0 5px}
+.num_input span:last-child{border-radius: 0  5px 5px 0; }
+.convert_input select{width: 32%;height: 30px;line-height: 30px;border-radius: 5px;box-shadow: 0 3px 5px #c9acb9 inset;}
+.convert_input tr td{height: 40px;vertical-align: top;padding-left:10px;}
+.convert_input tr td:first-child{width:20%;padding:0;}
+
+.address {box-sizing:border-box;border:0;width:100%;height: 70px;padding:10px;line-height: 22px;border-radius: 5px;box-shadow: 0 3px 5px #c9acb9 inset;overflow-y:auto;overflow-x:hidden;max-width: 322px;color:#000;font-family: "微软雅黑"}
+.ts_message {border:1px dotted #969696;padding:10px 5px;border-radius: 5px;margin:10px 20px;font-size: 12px;color:#969696;}
+
+/*实物兑换确认弹框*/
+.dh_affirm  {margin-top:30px;}
+.dh_affirm .result_body {padding:20px;}
+.dh_affirm .sp_affirm {font-size: 18px;height: 40px;color: #646464;width:100%;text-align: left;}
+.dh_affirm .dt_affirm tr td{font-size: 18px;height:45px;height:auto;color: #646464;width:100%;text-align: left;}
+.dh_affirm .sp_affirm tr td:last-child{text-align: right;}
+.dh_affirm .dt_affirm tr td:first-child{width:30%;text-align: right;vertical-align: top;}
+.dh_affirm  .dh_img{display:inline-block;width:128px;width:128px;background: #fff;border-radius: 3px;border: 1px solid #f0e8d9;margin:15px 0;}
+.dh_affirm  .dh_img img{width:128px;width:128px;}
+
+/*实物兑换成功弹框*/
+.dh_affirm .alert_result {margin-top: 80px;}
+.result_body .hository {text-decoration: underline;color:#5279f7;}
+.img_ontheway {margin:20px auto;}
+
+.result_body .mart_20 {margin-top: 20px}

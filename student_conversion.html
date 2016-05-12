@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>学生积分兑换页面</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/student_conversion.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<div class="risehead">
+		<div class="risehead-content">
+			<div class="rise-contentone">
+				<div class="rise-nav">
+					<ul>
+						<li class="home">首页<span class="label"></span></li>		
+						<li class="login">
+							<div class="loginone">
+								<span class="text1">AMY GAO19811231</span>
+								<span class="img1"></span>
+								<span class="text2">/ 100</span>
+							</div>		
+							<div class="logintwo"><p>LOG OUT</p></div>
+						</li>
+						<li>帮助</li>
+						<li>购买</li>
+					</ul>
+				</div>
+			</div>	
+			<!-- menu新增内容[坚果兑换情况及详情] star-->
+			<!-- 菜单其它内容保持不变 -->			
+			<div class="add_conversion">
+				<ul>
+					<li>可兑换   <span class="img1"><img src="img/riselist-nav.png"></span>   /  99999</li>
+					<li>已兑换    <span class="img1"><img src="img/riselist-nav.png"></span>    /  99999</li>
+				</ul>    
+				<a href="subpage/convert_hository.html">坚果兑换记录</a>   					
+			</div>
+			<!-- menu新增内容 end -->
+		</div>		
+	</div>
+	<!-- 学生积分兑换页面 star  -->
+	<div class="main">
+		<div class="top">
+			<!-- 坚果转转转 star  -->
+			<div class="header">
+				<div class="lottery">
+					<h2>5月1日至5月30日</h2>
+					<p>嘎嘣、嘎嘣...50颗坚果转起来;</p>
+					<p>嘎嘣、嘎嘣...幸运好礼滚滚来；</p>
+					<p>嘎嘣、嘎嘣...充值卡片不停来；</p>
+					<p>嘎嘣、嘎嘣...全家出游乐开怀。</p>
+					<span class="cjxz_input">抽奖细则</span>
+				</div>
+				<a class="play_btn" href="#">
+					<!-- play_btn -->
+					<img src="img/play_btn.png">
+				</a>
+			</div>
+			<marquee direction="left"  class="que">某*某  139****1131  一年卡； 某*某   139****1234  半年卡； 某*某  139****3132 三月卡；  某*某  139****3212  半年卡;某*某  139****1131  一年卡； 某*某   139****1234  半年卡； 某*某  139****3132 三月卡；  某*某  139****3212  半年卡</marquee>
+			<!-- 坚果转转转 end  -->
+		</div>
+		<div class="link_more">
+			<a href="subpage/iWant.html"><img src="img/main_1.png" alt="我要做学霸"></a>
+			<a href="subpage/thinks.html"><img src="img/main_2.png" alt="谢谢你的爱"></a>
+			<a href="subpage/loveMe.html"><img src="img/main_3.png" alt="爱我么么哒"></a>
+		</div>
+	</div>
+	<!-- 学生积分兑换页面 end  -->
+	<!-- 坚果转转转弹框 star-->
+	<div class="position_all"></div>
+	<div class="alert_convert nut_zzz">
+		<span class="close_btn colse_big"></span>
+		<div class="convert_body">
+			<div class="z_main">
+				<img class="zp_img " src="img/zp_img.png">
+				<img class="zz_img" src="img/zz_img.png">				
+				<span class="cjxz_input">抽奖细则</span>
+			</div>
+			<div class="text_ts">
+				用<strong>50</strong> <img src="img/nut_img_big1.png">       让转轮飞一会儿吧~
+			</div>
+			<span id="play_on" class="btn_alert">GO</span>	
+			<!-- 抽奖细则弹窗 star-->
+			<div class="inner_position">
+				<div class="alert_result cjxz_text">
+					<h2>抽奖细则 </h2>
+					<span class="close_btn close_result"></span>
+					<div class="result_body">
+						<p>1. 每次抽奖消耗50颗坚果；</p>
+						<p>2. 抽奖次数不限；</p>
+						<p>3. 抽奖后可进入坚果兑换记录查看明细；</p>
+						<p>4. 获得读伴儿充值卡请在卡片激活有效期内进行，逾期无效；</p>
+						<p>5. 本活动最终解释权归北京迈瑞科教育科技有限公司所有。</p>
+						<span class="know_btn">知道啦</span>
+					</div>
+				</div>
+				<!-- 什么也没抽着 star-->
+				<div class="alert_result cj_result_yh">
+					<h2>小遗憾！</h2>
+					<span class="close_btn close_result"></span>
+					<div class="result_body">
+						<img src="img/yh_img.png">
+						<h4>什么也没抽着</h4>
+						<p>莫急，莫急，坚果散去还复来~</p>
+						<span class="know_btn mart_20 onemore">再来一次</span>
+					</div>
+				</div>
+				<!-- 什么也没抽着 end-->
+				<!-- 抽中坚果50以下 star-->
+				<div class="alert_result jp_nut50b">
+					<h2>小遗憾！</h2>
+					<span class="close_btn close_result"></span>
+					<div class="result_body">
+						<img src="img/nut_bag.png">
+						<p>获得</p>
+						<h4 class="text1">10</h4>
+						<p class="text2">蚂蚱再小也是肉哇，先收了吧~</p>
+						<span class="know_btn mart_20 onemore">再来一次</span>
+					</div>
+				</div>
+				<!-- 抽中坚果50以下 end-->
+				<!-- 抽中坚果50以上 star-->
+				<div class="alert_result jp_nut50t">
+					<h2>恭喜你！</h2>
+					<span class="close_btn close_result"></span>
+					<div class="result_body">
+						<img src="img/nut_bag.png">
+						<p>获得</p>
+						<h4 class="text1">50</h4>
+						<p class="text2">手气还不错哦~~</p>
+						<span class="know_btn mart_20 onemore">收入囊中</span>
+					</div>
+				</div>
+				<!-- 抽中坚果50以上 end-->
+				<!-- 抽中读伴儿卡 star-->
+				<div class="alert_result jp_card">
+					<h2>恭喜你！</h2>
+					<span class="close_btn close_result"></span>
+					<div class="result_body">
+						<img src="img/jp_card.png">
+						<p>获得</p>
+						<h4 class="text1">1个月充值卡</h4>
+						<p class="text2">手气不是盖的~</p>
+						<p class="card_info">卡号：0100000000  密码：123456</p>
+						<p class="card_info">（可在<a class="history" href="subpage/convert_hository.html">坚果兑换记录</a>中查询）</p>
+						<span class="know_btn mart_20 onemore">收入囊中</span>
+					</div>
+				</div>
+				<!-- 抽中读伴儿卡 end-->
+			</div>
+			<!-- 抽奖细则弹窗 end-->
+		</div>
+	</div>
+	<!-- 坚果转转转弹框 end-->
+
+	<!-- 相关通用弹框 star
+	@显示弹框事件时 遮罩（.position_all ） 也需显示	-->
+	<!-- 网络开小差啦~~ -->
+	<div class="all_alert">
+		<p></p>
+		<p>网络开小差啦~~</p>
+		<div class="btn_one">
+			<span class="btn_alert">过一会再试试</span>				
+		</div>
+	</div>
+	<!-- 坚果不足，无法抽取~~ -->
+	<div class="all_alert">
+		<p></p>
+		<p>坚果不足，无法抽取~~</p>
+		<div class="btn_one">
+			<span class="btn_alert">去读书集坚果</span>				
+			<span class="btn_alert">知道啦</span>				
+		</div>
+	</div>
+	<!-- 坚果不足，无法兑换~~ -->
+	<div class="all_alert">
+		<p></p>
+		<p>坚果不足，无法兑换~~</p>
+		<div class="btn_one">
+			<span class="btn_alert">去读书集坚果</span>				
+			<span class="btn_alert">知道啦</span>				
+		</div>
+	</div>
+	<!-- 你还不是读伴儿会员~~~ -->
+	<div class="all_alert novip_alert">
+		<p></p>
+		<p>你还不是读伴儿会员~~~</p>
+		<div class="btn_one line_btn">
+			<span class="btn_alert">马上成为读伴儿会员</span>				
+			<span class="btn_alert btn_alert_gray">再考虑一下</span>				
+		</div>
+	</div>
+	<!-- 相关通用弹框 end-->
+	<script type="text/javascript" src="js/student_conversion.js">	</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/*
+	@ 2016/5/3
+	@ irene 
+ */ 
+@charset "utf-8";
+
+body{background: #fef7f0}
+/*学生坚果兑换-主页面*/
+.main {width:956px;margin:0 auto;padding-top:28px;}
+.header {background: url(../img/top_1.png); height: 369px;position: relative;}
+/*抽奖文字*/
+.lottery {position: absolute;left:375px;top:73px;color:#fff;}
+.lottery h2{font-size:30px;color: #165e50;margin-bottom: 10px;}
+.lottery p{font-size: 13px;}
+.lottery span{font-size: 14px;text-align:center;line-height:26px;cursor:pointer;display:inline-block;margin-top:15px;height: 26px;width:85px;background: #096c59;border-radius: 10px;}
+/*抽奖按钮*/
+.play_btn {position: absolute;left:262px;top:275px;}
+.top{margin-bottom: 23px;}
+/*跑马灯*/
+.que{height:34px;line-height: 34px;color:#fff;font-size: 12px; background:#4c4a48;}
+
+.link_more {padding-bottom: 40px;}
+.link_more a{width:315px;display: inline-block;}
+.link_more a:nth-child(2){text-align: center;}
+.link_more a:nth-child(3){text-align: right;}
+
+/*坚果转转转弹框*/
+.position_all {display:none;position: fixed;width:100%;height: 100%;left:0;top:0;right:0;bottom:0;background: rgba(0,0,0,.5);}
+.alert_convert {display:none;background:#fff;height: 650px;width:540px;position: fixed;top: 50%;left:50%;transform:translate(-50%,-50%);}
+.close_btn {z-index:999;position: absolute;right:-20px;top:-20px;height: 45px;width:45px;display: inline-block;background: url(../img/close_btn.png);cursor:pointer;}
+.convert_body {background: #f6f0eb;height: 650px;text-align: center;}
+.convert_body .btn_alert{height: 46px;width:290px;line-height: 40px;font-size: 30px;border-radius: 46px;}
+.convert_body .btn_alert{height: 46px;width:290px;line-height: 40px;font-size: 30px;border-radius: 46px;}
+/*大转盘css*/
+.nut_zzz {}
+.z_main {position:relative;height: 520px;width:540px;background: url(../img/nut_zzz_bj.png);}
+.z_main .zp_img{height: 480px;width:480px;margin:20px;transition:all 2s ease;}
+.z_main .zp_gd{transition:all 1s ease;transform: rotate(360deg);}
+/*100坚果*/
+.z_main .jp1{transition:all 5s ease;transform: rotate(0deg);}
+/*一年卡*/
+.z_main .jp2{transition:all 5s ease;transform: rotate(29deg);}
+/*一月卡*/
+.z_main .jp3{transition:all 5s ease;transform:rotate(-29deg);}
+/*10坚果*/
+.z_main .jp4{transition:all 5s ease;transform:rotate(-60deg);}
+/*全家游*/
+.z_main .jp5{transition:all 5s ease;transform:rotate(-89deg);}
+/*70坚果*/
+.z_main .jp6{transition:all 5s ease;transform:rotate(-127deg);}
+/*半年卡*/
+.z_main .jp7{transition:all 5s ease;transform:rotate(-153deg);}
+/*30坚果*/
+.z_main .jp8{transition:all 5s ease;transform:rotate(-181deg);}
+/*三月卡*/
+.z_main .jp9{transition:all 5s ease;transform:rotate(-207deg);}
+/*50坚果*/
+.z_main .jp10{transition:all 5s ease;transform:rotate(-236deg);}
+/*好可惜*/
+.z_main .jp11{transition:all 5s ease;transform:rotate(-270deg);}
+/*20坚果*/
+.z_main .jp12{transition:all 5s ease;transform:rotate(-302deg);}
+
+.z_main .zz_img{position: absolute;left: 216px; top: 223px;width: 216px;}
+.text_ts {color:#666;font-size: 16px;height: 50px;line-height: 50px;margin-top: 10px;font-weight: bold;}
+.text_ts strong{color:#ec6200;font-size: 26px;margin-left:10px;}
+.text_ts img{vertical-align: -10px;}
+.z_main span{font-size: 14px;text-align:center;line-height:26px;cursor:pointer;display:inline-block;margin-top:15px;height: 26px;width:85px;background: #096c59;border-radius: 10px;color:#fff;position: absolute;top:10px;right: 20px;}
+
+/*弹框内小弹框*/
+.inner_position {display:none;position: absolute;height: 100%;width:100%;background: rgba(255,255,255,.9);top:0;left:0;bottom:0;right:0;}
+.alert_result {display:none;box-shadow:5px 5px 5px #dcdcdc;width:390px;margin:50px auto;min-height:400px;position: relative;background: #f6f0eb}
+.alert_result h2 {border-radius:5px 5px 0 0;text-align:center;font-size:20px;color:#fff;height: 52px;line-height: 52px; background: linear-gradient(#fe7900,#d75301)}
+.result_body {padding:30px 0;text-align: center;color:#666;}
+.result_body .know_btn{display:block;margin:20px auto 0;cursor:pointer;color:#fff;font-size:16px;line-height:30px;height: 35px;width:123px;text-align: center;border-radius: 3px;background: linear-gradient(#f16f1c,#cf3600);border:1px solid #db4300;box-shadow:1px 1px 3px #ff8938 inset;}
+/*抽奖细则弹框内容*/
+.cjxz_text {min-height: 340px;}
+.cjxz_text .result_body{padding:30px;color:#666;text-align: left;font-size: 14px;line-height: 24px;}
+/*抽奖结果-未抽中*/
+.cj_result_yh h2{background: linear-gradient(#f6f4f1,#e9e7e5,#dcdad8);color:#783605;}
+.cj_result_yh h4{font-size:24px; height:70px;line-height:80px;color:#783605;}
+/*抽奖结果-坚果小于50*/
+.jp_nut50b {font-size: 18px;}
+.jp_nut50b h2{background: linear-gradient(#f6e0c3,#f4c288,#f2ab5a);color:#783605;}
+.jp_nut50b h4{font-size:34px; height: 50px;line-height: 50px;color:#783605;font-weight: bold;}
+.jp_nut50b h4::after{content: '';display: inline-block;width:27px;height:40px;vertical-align: -6px;margin-left: 9px;background: url(../img/nut_img_big1.png);}
+/*抽奖结果-坚果大于50*/
+.jp_nut50t h4{font-size:34px; height: 50px;line-height: 50px;color:#783605;font-weight: bold;}
+.jp_nut50t h4::after{content: '';display: inline-block;width:27px;height:40px;vertical-align: -6px;margin-left: 9px;background: url(../img/nut_img_big1.png);}
+/*抽奖结果-充值卡*/
+.jp_card {font-size: 18px;}
+.jp_card .text1{ color: #ec6200;font-size: 28px;height: 60px;line-height: 60px}
+.jp_card img{ margin-bottom: 20px}
+.jp_card .text2{ height: 30px;line-height: 30px;margin-bottom: 10px}
+.jp_card .history{ color: #74b4f0;text-decoration: underline;}
+.jp_card .card_info{font-size: 14px;}
