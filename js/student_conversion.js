@@ -16,11 +16,11 @@
 		var gl = parseInt(Math.random()*12+1);
 		console.log(gl)
 		// 获取旋转大转盘元素
-		var zp_img = $('.zp_img')
+		var zp_img = $('.jx_list')
 		// 还原上一次抽过奖转盘位置
 		zp_img.removeClass()
 		// 设置转盘位置
-		zp_img.addClass('zp_img');
+		zp_img.addClass('jx_list');
 		// 添加缓冲转动效果 此过程1S
 		zp_img.addClass('zp_gd');
 		// 按钮变灰色

@@ -33,9 +33,25 @@ body{background: #fef7f0}
 .convert_body .btn_alert{height: 46px;width:290px;line-height: 40px;font-size: 30px;border-radius: 46px;}
 /*大转盘css*/
 .nut_zzz {}
-.z_main {position:relative;height: 520px;width:540px;background: url(../img/nut_zzz_bj.png);}
-.z_main .zp_img{height: 480px;width:480px;margin:20px;transition:all 2s ease;}
+.z_main {position:relative;height: 520px;width:540px;background: url(../img/nut_zzz_bj.png);padding-top: 20px;}
+.jx_list {position:relative;height: 480px;width:480px;margin:20px auto;margin-top:0;transition:all 2s ease;background: url(../img/zp_img.png); background-size: 100% 100%;}
+.z_main .zp_img{}
 .z_main .zp_gd{transition:all 1s ease;transform: rotate(360deg);}
+/*抽奖例表图片定位*/
+.jx_list img{width: 85px;position: absolute;}
+.jx_list img:nth-child(1){left: 196px;top: 60px;transform: rotate(-91deg);}
+.jx_list img:nth-child(2){left: 273px;top: 57px;transform: rotate(-55deg);}
+.jx_list img:nth-child(3){left: 342px;top: 147px;transform: rotate(-28deg);}
+.jx_list img:nth-child(4){left: 351px;top: 191px;transform: rotate(-5deg);}
+.jx_list img:nth-child(5){left: 339px;top: 300px;transform: rotate(31deg);}
+.jx_list img:nth-child(6){left: 276px;top: 326px;transform: rotate(59deg);}
+.jx_list img:nth-child(7){left: 198px;top: 379px;transform: rotate(-90deg);}
+.jx_list img:nth-child(8){left: 112px;top: 329px;transform: rotate(-58deg);}
+.jx_list img:nth-child(9){left: 56px;top: 293px;transform: rotate(-28deg);}
+.jx_list img:nth-child(10){left: 38px;top: 193px;transform: rotate(-4deg);}
+.jx_list img:nth-child(11){left: 59px;top: 149px;transform: rotate(28deg);}
+.jx_list img:nth-child(12){left: 119px;top: 63px;transform: rotate(51deg);}
+/*抽奖结果方向：*/
 /*100坚果*/
 .z_main .jp1{transition:all 5s ease;transform: rotate(0deg);}
 /*一年卡*/
