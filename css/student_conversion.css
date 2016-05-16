@@ -14,7 +14,7 @@ body{background: #fef7f0}
 .lottery p{font-size: 13px;}
 .lottery span{font-size: 14px;text-align:center;line-height:26px;cursor:pointer;display:inline-block;margin-top:15px;height: 26px;width:85px;background: #096c59;border-radius: 10px;}
 /*抽奖按钮*/
-.play_btn {position: absolute;left:262px;top:275px;}
+.play_btn {position: absolute;left:262px;top:275px;cursor:pointer;}
 .top{margin-bottom: 23px;}
 /*跑马灯*/
 .que{height:34px;line-height: 34px;color:#fff;font-size: 12px; background:#4c4a48;}
