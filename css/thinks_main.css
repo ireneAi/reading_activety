@@ -47,7 +47,7 @@ body{background: #fef7f0}
 /*弹框样式*/
 .position_all {display:none;position: fixed;width:100%;height: 100%;left:0;top:0;right:0;bottom:0;background: rgba(0,0,0,.5);}
 .alert_convert {display:none;background:#fff;height: 650px;width:540px;position: fixed;top: 50%;left:50%;transform:translate(-50%,-50%);}
-.close_btn {position: absolute;right:-20px;top:-20px;height: 45px;width:45px;display: inline-block;background: url(../img/close_btn.png);cursor:pointer;}
+.close_btn {z-index:996;position: absolute;right:-20px;top:-20px;height: 45px;width:45px;display: inline-block;background: url(../img/close_btn.png);cursor:pointer;}
 .card_convert {background: url(../img/card_back.png) no-repeat top #f6f0eb;}
 .convert_body .qb {position:absolute;top: 149px;left: 163px;transform: rotate(13deg);}
 .card_convert .convert_body {padding-top: 365px;padding-right: 32px;}
@@ -73,43 +73,19 @@ body{background: #fef7f0}
 .result_body .qb_img img{margin: 54px 0 0 16px;width: 119px;}
 .result_body .know_btn{display:block;margin:40px auto 0;cursor:pointer;color:#fff;font-size:16px;line-height:30px;height: 35px;width:123px;text-align: center;border-radius: 3px;background: linear-gradient(#f16f1c,#cf3600);border:1px solid #db4300;box-shadow:1px 1px 3px #ff8938 inset;}
 
-/*实物兑换内容弹框*/
-.convert_sw_alert {height: 580px;}
-.convert_sw_alert .convert_body{ height: 580px;overflow:hidden;overflow-y: scroll;padding-bottom: 20px;background: #f6f0eb}
-.convert_sw_alert .btn_box .btn_convert {margin:20px;line-height: 35px;}
-.sp_img_list {font-size:14px;color: #fff;height: 465px;width: 523px;background: url(../img/duihuanLW.png) no-repeat;padding:10px;}
-.sp_img_list h3{padding:15px;height: 40px;}
-.sp_img_list .sp_mesaage {height: 40px;line-height: 20px;margin:15px 15px;}
-.sp_img_list .ms_text{height: 60px;overflow: :hidden;overflow-y:auto;margin: 0 5px 0 15px;padding-right: 5px;}
-.img_list {height: 260px;overflow:hidden;overflow-y:auto;width:539px; }
-.img_list span{display:inline-block;float:left;height: 246px;width:246px;margin-bottom:15px;background: rgba(255,255,255,.9);}
-.img_list span:nth-child(2n){margin-left: 10px;}
-.img_list span img{width:100%;height: 100%}
-.convert_input {margin:10px 30px;color: #969696;}
-.convert_input .text_input{font-size:12px;width: 100%;height: 30px;line-height: 30px;border-radius: 5px;box-shadow: 0 3px 5px #c9acb9 inset;}
-.num_input input{float:left;text-align:center;color: #999; display:inline-block;width:65px;height: 26px; border:1px solid #333;border-left:0;border-right:0;background: transparent;}
-.num_input span{cursor:pointer;float:left;text-align:center;display:inline-block;width:25px;height: 26px; border:1px solid #333;background: transparent;border-radius: 5px 0 0 5px}
-.num_input span:last-child{border-radius: 0  5px 5px 0; }
-.convert_input select{width: 32%;height: 30px;line-height: 30px;border-radius: 5px;box-shadow: 0 3px 5px #c9acb9 inset;}
-.convert_input tr td{height: 40px;vertical-align: top;padding-left:10px;}
-.convert_input tr td:first-child{width:20%;padding:0;}
+/*鲜花赠送弹框*/
+.fllower_zs {height: 654px;width:897px;background: #f6f0eb;background: url(../img/card_msp.png);}
+.fllower_zs .convert_body{ height: 651px;width:897px;padding-top:565px;position:relative;box-sizing:border-box;}
+.fllower_zs .fllower {position:absolute;left: 99px;top: 181px;width: 325px;}
+.fllower_zs textarea {top:194px;height:252px;width: 285px;max-height:252px;max-width: 285px;padding:10px;font-size: 18px;border-radius: 5px;box-shadow: 0 3px 10px #eee7e0 inset;border:0;position: absolute;font-family: "微软雅黑";left: 510px;}
+.fllower_zs input {top:120px;left:560px;height:38px;width: 180px;font-size: 18px;position:absolute;background: transparent;}
+.fllower_zs input.form {top:490px;left:590px;}
 
-.address {box-sizing:border-box;border:0;width:100%;height: 70px;padding:10px;line-height: 22px;border-radius: 5px;box-shadow: 0 3px 5px #c9acb9 inset;overflow-y:auto;overflow-x:hidden;max-width: 322px;color:#000;font-family: "微软雅黑"}
-.ts_message {border:1px dotted #969696;padding:10px 5px;border-radius: 5px;margin:10px 20px;font-size: 12px;color:#969696;}
 
-/*实物兑换确认弹框*/
-.dh_affirm  {margin-top:30px;}
-.dh_affirm .result_body {padding:20px;}
-.dh_affirm .sp_affirm {font-size: 18px;height: 40px;color: #646464;width:100%;text-align: left;}
-.dh_affirm .dt_affirm tr td{font-size: 18px;height:45px;height:auto;color: #646464;width:100%;text-align: left;}
-.dh_affirm .sp_affirm tr td:last-child{text-align: right;}
-.dh_affirm .dt_affirm tr td:first-child{width:30%;text-align: right;vertical-align: top;}
-.dh_affirm  .dh_img{display:inline-block;width:128px;width:128px;background: #fff;border-radius: 3px;border: 1px solid #f0e8d9;margin:15px 0;}
-.dh_affirm  .dh_img img{width:128px;width:128px;}
-
-/*实物兑换成功弹框*/
-.dh_affirm .alert_result {margin-top: 80px;}
-.result_body .hository {text-decoration: underline;color:#5279f7;}
-.img_ontheway {margin:20px auto;}
-
+/*鲜花兑换成功弹框*/
+.one_flow {width: 32px;vertical-align: -9px;}
+.img_zswp {margin:10px auto;}
+.alert_result p strong{color:#ff5f00;font-size: 24px;margin-right: 10px}
+.alert_result p{color:#666;font-size: 18px;height: 42px;font-weight: bold}
 .result_body .mart_20 {margin-top: 20px}
+.result_body .mart_0 {margin-top: 0px}
