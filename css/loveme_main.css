@@ -11,8 +11,11 @@ body{background: #fef7f0}
 .return {text-align: right;color:#5c3b1f;font-size: 14px;height: 30px;line-height: 30px;}
 .return a{color:#5c3b1f;text-decoration: underline;}
 
+
 /*手机充值例表*/
-.card_list h2 {text-align: right;height: 35px;margin: 20px 0}
+.loveme_main h2 i{position:absolute;display:block;background: #fef7f0;padding-right:10px;height: 35px;line-height: 35px;top:0;color:#323232;font-size: 14px;}
+.card_list h2 {text-align: right;height: 35px;margin: 20px 0;position: relative;}
+.card_list h2 i{left:95px;}
 .card_list .card {width:225px;height: 170px;display: inline-block;margin-right: 3px;}
 .card_list .card:last-child{margin-right: 0px;}
 .card_list .card dt{width:225px;background: url(../img/thinks/l-card_bc.png) no-repeat; height: 129px;}
@@ -23,7 +26,8 @@ body{background: #fef7f0}
 .convert_btn img{display: inline-block;float: left}
 
 /*鲜花赠送例表*/
-.convert_list h2 {text-align: right;height: 35px;margin: 40px 0}
+.convert_list h2 {text-align: right;height: 35px;margin: 40px 0;position: relative;}
+.convert_list h2 i{left:211px;}
 .convert_list dl {width:206px;margin-right: 28px;display: inline-block;margin-bottom: 40px;}
 .convert_list dl:nth-child(4n){margin-right:0;}
 .convert_list dt {height: 204px;width:204px;background: #fff;border-radius: 5px;border:1px solid #f0e8d9;}

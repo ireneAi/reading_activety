@@ -1,0 +1,75 @@
+/*
+	@ 2016/5/16
+	@ irene 
+ */ 
+@charset "utf-8";
+
+body{background: #fef7f0}
+/*谢谢你的爱*/
+.learn_main {width:942px;margin:0 auto;padding-top:20px;padding-bottom: 50px;}
+
+.return {text-align: right;color:#5c3b1f;font-size: 14px;height: 30px;line-height: 30px;}
+.return a{color:#5c3b1f;text-decoration: underline;}
+/*TAB菜单*/
+.menu_list {height: 69px;}
+.menu_list a {width:140px;line-height:36px;height:36px;text-align: center;color:#fff;display: inline-block;margin-right:5px;background:url(../img/iw_list.png) repeat;border-radius: 5px;}
+.menu_list a.on {background:url(../img/iw_list_on.png) repeat;}
+/*banner*/
+.banner_text {height: 411px;margin-bottom:35px;position: relative;}
+.text_info {height: 315px;width:465px;position: absolute;right:40px;top:50px;border-radius:5px;padding:20px;color:#502e10;background: rgba(255,255,255,.8);}
+.text_info h3{font-weight: bold;font-size:18px;margin-bottom:10px;}
+.text_info p{font-size:14px;text-indent: 28px;}
+/*视频详细信息及兑换*/
+.video_convert {height: 410px;}
+.video_convert img.left_videoimg{height: 385px;width:680px;box-shadow: 3px 3px 6px #ccc}
+.right_info {float:right;width:250px;}
+.btn_box {text-align: center;}
+.btn_box .btn_convert{display:inline-block;margin: 25px 0 0 10px;cursor:pointer;color:#fff;font-size:20px;height: 40px;text-align: center;border-radius: 20px;background: linear-gradient(#ff8d00,#ff7600,#ff5a00);border:1px solid #db4300;box-shadow:1px 1px 3px #ff8938 inset,1px 1px 5px #555;width: 97%;}
+.btn_box .nut_img{display: inline;vertical-align: middle;}
+.title{color:#969696;font-size:14px;margin-bottom:15px;}
+.title:after{content: '';display: inline-block;border-top:1px dotted #969696;width:870px;margin-bottom:5px;}
+.right_info {background: url(../img/right_alert.png) no-repeat right top;padding-top:140px;float: right;}
+.right_info h3{font-size:16px;font-weight: bold;padding:0 20px 0 30px;height: 40px;line-height:20px;overflow: hidden;color:#7b7a7f;}
+.right_info p{margin-bottom:20px;font-size:14px;padding:0 20px 0 30px;height: 105px;line-height:20px;margin-top:8px;overflow: hidden;color:#7b7a7f;}
+/*视频播放*/
+.video_play {min-height: 640px;height: auto;position: relative;}
+.video_play video{width:945px;height: 535px;background: #000;}
+.video_play .play_video{position:absolute;left:50%;top:50%;transform:translate(-35%,-100%);cursor:pointer;}
+.video_massage {height:70px;padding-top: 15px;}
+.video_massage span.collect {display: inline-block;width:160px;padding-left:25px;background: url(../img/play_nav.png) no-repeat 0 center;font-size:12px; color:#969696;height: 28px; line-height: 28px;}
+.video_massage span.play {display: inline-block;width:160px;padding-left:25px;background: url(../img/play_nav.png) no-repeat -160px center;font-size:12px; color:#969696;height: 28px; line-height: 28px;}
+.video_massage span.collect_btn {display: inline-block;float: right;height: 34px;width:37px;background: url(../img/collect.png);}
+.video_massage span.on {background: url(../img/collect.png) left -34px;}
+
+/*视频列表*/
+.video_list dl {width:300px;display: inline-block;margin:10px 16px 20px 0;cursor:pointer;}
+.video_list dl:nth-child(3n) {margin-right:0;}
+.video_list dl dt img {width:100%;height:100%;}
+.video_list dl dt {width:300px;height: 170px;position: relative;display: block;}
+.video_list dl dt .vedeo_info{font-size:14px;transition:all .2s ease;width:100%;height:170px;line-height: 35px;padding-top:135px;position: absolute;color:#fff;bottom:0;background: url(../img/mode.png);}
+.video_list dl dt .vedeo_info h4{width:235px;padding-left:10px;display:inline-block;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;}
+.video_list dl dt .vedeo_info span{width:55px;float:right;display:inline-block;line-height: 35px;height:35px;}
+.video_list dl dd {padding-top:10px;height: 28px;}
+.convert_btn {font-size:14px;margin-bottom:10px;display: inline-block;float:right;cursor:pointer;height: 26px;color:#fff;line-height:26px;padding:0 8px;background: url(../img/thinks/dh_btn1.png) repeat-x;border-radius: 3px;}
+.convert_btn img{display: inline;    vertical-align: -7px;margin-right: 8px;}
+.video_list dl dd span.collect {display: inline-block;width:90px;padding-left:25px;background: url(../img/play_nav.png) no-repeat 0 center;font-size:12px; color:#969696;height: 28px; line-height: 28px;}
+.video_list dl dd span.play {display: inline-block;width:90px;padding-left:25px;background: url(../img/play_nav.png) no-repeat -160px center;font-size:12px; color:#969696;height: 28px; line-height: 28px;}
+
+.video_list dl.on dt .vedeo_info{width:100%;height: 35px;padding:0;position: absolute;color:#969696;bottom:0;background: rgba(255,255,255,.9);}
+.video_list dl:hover dt .vedeo_info{width:100%;height: 35px;padding:0;position: absolute;color:#969696;bottom:0;background: rgba(255,255,255,.9);}
+.video_list dl:hover dt{box-shadow: 0 0 10px #f7a654;}
+/*弹框样式*/
+.position_all {display:none;position: fixed;width:100%;height: 100%;left:0;top:0;right:0;bottom:0;background: rgba(0,0,0,.5);}
+.alert_convert {text-align:center;display:none;background:#fff;height: 610px;width:540px;position: fixed;top: 50%;left:50%;transform:translate(-50%,-50%);background: url(../img/alert_bottom.png) repeat-x bottom left;}
+.close_btn {z-index:1000;position: absolute;right:-20px;top:-20px;height: 45px;width:45px;display: inline-block;background: url(../img/close_btn.png);cursor:pointer;}
+.card_convert {background: url(../img/card_back.png) no-repeat top #f6f0eb;}
+.alert_convert .btn_alert{width:288px;height: 43px;line-height:43px;font-size: 20px;margin-top:35px;}
+/*视频兑换*/
+.video_text {height: 220px;width:100%;background: url(../img/video_convert.png) no-repeat;position: relative;z-index: 999;}
+.video_text .mc {color:#7b7a7f;text-align: left;position: absolute;right:25px;top:45px;background: rgba(255,255,255,.9);height: 120px;width:315px;border-radius:10px;padding:20px;}
+.video_text .mc p {font-size:14px;}
+.video_text .mc h3 {font-size:16px;margin-top: 20px;line-height: 20px;height: 40px;overflow: hidden;}
+.alert_convert video{height: 306px;width:540px;position: relative;z-index: 998;margin-top:-30px;}
+
+.result_body .mart_20 {margin-top: 20px}
+.result_body .mart_0 {margin-top: 0px}

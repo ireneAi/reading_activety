@@ -12,7 +12,9 @@ body{background: #fef7f0}
 .return a{color:#5c3b1f;text-decoration: underline;}
 
 /*手机充值例表*/
-.card_list h2 {text-align: right;height: 35px;margin: 20px 0}
+.thinks_main h2 i{position:absolute;display:block;background: #fef7f0;padding-right:10px;height: 35px;line-height: 35px;top:0;color:#323232;font-size: 14px;}
+.card_list h2 {text-align: right;height: 35px;margin: 20px 0;position: relative;}
+.card_list h2 i{left:115px;}
 .card_list .card {width:225px;height: 170px;display: inline-block;margin-right: 3px;}
 .card_list .card:last-child{margin-right: 0px;}
 .card_list .card dt{width:225px;background: url(../img/thinks/card_bc.png) no-repeat; height: 129px;}
@@ -23,7 +25,8 @@ body{background: #fef7f0}
 .card_list .card .convert_btn img{display: inline-block;float: left}
 
 /*鲜花赠送例表*/
-.flower_list h2 {text-align: right;height: 35px;margin: 40px 0}
+.flower_list h2 {text-align: right;height: 35px;margin: 40px 0;position: relative;}
+.flower_list h2 i{left:100px;}
 .flower_list dl {float:left;text-align: center;width:203px;margin-right: 36px; height: 320px;}
 .flower_list dd {padding:0 15px;}
 .flower_list dd .card_num{font-size: 12px;color: #969696;height: 50px; line-height: 50px;}
@@ -89,3 +92,15 @@ body{background: #fef7f0}
 .alert_result p{color:#666;font-size: 18px;height: 42px;font-weight: bold}
 .result_body .mart_20 {margin-top: 20px}
 .result_body .mart_0 {margin-top: 0px}
+
+/*老师收到鲜花贺卡*/
+.fllower_card {height: 630px;width:897px;background: #f6f0eb;background: url(../img/card_msp.png);}
+.fllower_card .convert_body{ height: 651px;width:897px;padding-top:565px;position:relative;box-sizing:border-box;}
+.fllower_card .fllower {position:absolute;left: 99px;top: 181px;width: 325px;}
+.fllower_card textarea[disabled] {top:194px;height:252px;width: 285px;max-height:252px;max-width: 285px;padding:10px;font-size: 18px;border-radius: 5px;box-shadow: 0 3px 10px #eee7e0 inset;border:0;position: absolute;font-family: "微软雅黑";left: 510px;}
+.fllower_card input {top:120px;left:560px;height:38px;width: 180px;font-size: 18px;position:absolute;background: transparent;}
+.fllower_card input.form {top:490px;left:590px;}
+.fllower_card .text_bottom{line-height: 57px;color:#646464;padding-left:20px;}
+.fllower_card .text_bottom strong{color:#f87c0e;font-size:24px;margin:0 5px;}
+.fllower_card .text_bottom span.btn_konw_teach{margin:15px 40px;display:block;float:right;cursor:pointer;color:#fff;font-size:16px;line-height:30px;height: 35px;width:123px;text-align: center;border-radius: 3px;background: linear-gradient(#f16f1c,#cf3600);border:1px solid #db4300;box-shadow:1px 1px 3px #ff8938 inset;}
+

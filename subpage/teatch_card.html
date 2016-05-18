@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>兑换记录页面</title>
+	<title>老师收到贺卡页面</title>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/thinks_main.css">
 	<script src="../js/jquery-1.10.2.js"></script>
@@ -163,10 +163,10 @@
 	</div>
 	<!-- 谢谢你的爱 end-->
 	<!-- 弹框 star-->
-	<div class="position_all"></div>
+	<div class="position_all" style="display:block;"></div>
 	
-	<!-- 兑换送鲜花 star-->
-	<div class="alert_convert fllower_zs">
+	<!-- 老师收到鲜花 star-->
+	<div class="alert_convert fllower_card" style="display:block;">
 		<span class="close_btn colse_big"></span>
 		<div class="convert_body">
 			<div class="card_convert_zs">
@@ -174,88 +174,18 @@
 				 5.png:五朵鲜花
 				 10.png:十朵鲜花 -->
 				 <img class="fllower" src="../img/10.png">
-				 <input class="form" type="text">
-				 <input class="to" type="text">
-				 <textarea placeholder="感谢您一直以来"></textarea>
-				 <div class="btn_box">
-				 	<span class="btn_convert">豪气地用<img class="nut_img" src="../img/nut_img_big.png">300送花</span>
+				 <input class="form" disabled type="text">
+				 <input class="to" disabled type="text">
+				 <textarea disabled placeholder="感谢您一直以来"></textarea>
+				 <div class="text_bottom">
+				 	王老师：您收到来自  <strong>Ramona</strong>  同学的  <strong>5</strong> 朵 玫瑰花，获得积分 5 分。
+					<span class="btn_konw_teach">知道啦</span>
 				 </div>
 			</div>
-			<!-- 兑换成功弹出内容 star-->
-			<div class="inner_position">
-				<!-- 兑换成功弹框 star-->
-				<div class="alert_result">
-					<h2>恭喜你！</h2>
-					<span class="close_btn close_result"></span>
-					<div class="result_body">
-						<h3>你已经成功向</h3>						
-						<p><strong>王一荣</strong>老师</p>						
-						<h3>赠送  10朵  <img class="one_flow" src="../img/thinks/list_fend.png"></h3>	
-						<img class="img_zswp" src="../img/1.png">	
-						<span class="know_btn mart_0">知道啦</span>
-					</div>
-				</div>
-				<!-- 兑换成功弹框 end-->	
-			</div>
-			<!-- 兑换成功 end-->	
 		</div>
 	</div>
-	<!-- 兑换送鲜花 end-->
+	<!-- 老师收到鲜花 end-->
 	<!-- 弹框 end-->
-<!-- 充值卡兑换内容 star-->
-	<div class="alert_convert card_convert">
-		<span class="close_btn colse_big"></span>
-		<div class="convert_body">
-			<!-- 充值卡兑换表单 star-->
-			<!-- 
-			￥1图片为：1.png
-			￥2图片为：2.png
-			￥5图片为：5.png
-			￥10图片为：10.png		-->
-			<img class="qb" src="../img/thinks/10.png">
-			<div class="item">
-				填写手机<input type="text" placeholder="注： 话费一经兑换，不可撤销。请确认手机号无误。">
-			</div>
-			<div class="item">
-				确认手机<input type="text" placeholder="请再次确认手机号。">
-			</div>
-			<div class="item phone_text">
-				　短信留言
-				<p>（不超过60字）</p>
-				<textarea name="" id="" placeholder="亲爱的爸爸/妈妈, 我在读伴儿图书馆认真读书，成功为您挣到了一笔话费哦，谢谢您对我的爱和付出~我会更加努力的，棒棒哒~  爱你的（真实姓名）" ></textarea>
-			</div>
-			<div class="error">
-				[错误提示文字]如手机号不一致
-			</div>
-			<div class="btn_box">
-				<span class="btn_convert convert_btn1">豪气地用<img class="nut_img" src="../img/nut_img_big.png">300兑换</span>
-			</div>
-			<!-- 充值卡兑换表单 end-->
-			<!-- 兑换成功弹出内容 star-->
-			<div class="inner_position">
-				<div class="alert_result">
-					<h2>恭喜你！</h2>
-					<span class="close_btn close_result"></span>
-					<div class="result_body">
-						<h3>你已经成功向手机号：</h3>
-						<h4>13911616612</h4>
-						<h3>充值</h3>
-						<span class="qb_img">
-							<!-- 
-								￥1图片为：1.png
-								￥2图片为：2.png
-								￥5图片为：5.png
-								￥10图片为：10.png			-->
-							<img src="../img/thinks/10.png">
-						</span>
-						<span class="know_btn">知道啦</span>
-					</div>
-				</div>
-			</div>
-			<!-- 兑换成功 end-->
-		</div>
-	</div>
-	<!-- 充值卡兑换内容 end-->
 	<!-- 相关通用弹框 star
 	@显示弹框事件时 遮罩（.position_all ） 也需显示	-->
 	<!-- 网络开小差啦~~ -->
@@ -295,37 +225,11 @@
 	</div>
 	<!-- 相关通用弹框 end-->
 	<script type="text/javascript">
-		// 充值卡兑换弹框
-		$('.card_btn').click(function(){
-			$('.position_all').show()
-			$('.card_convert').show()
-			// 点击Q币兑换按钮
-			$('.convert_btn1').click(function(){
-				$('.card_convert .inner_position').show()
-				$('.card_convert .inner_position .alert_result').show()
-			})
-		})
 		
-
-		// 关闭兑换成功弹框		
-		$('.close_result').click(function(){
-			$('.inner_position').hide()
-			$('.alert_result').hide()
-		})
-		// 关闭兑换弹框		
+		// 关闭卡片弹框		
 		$('.colse_big').click(function(){
 			$('.position_all').hide()
 			$(this).parent().hide()
-		})		
-		// 鲜花兑换
-		$('.flower_list .convert_btn').click(function(){
-			$('.position_all').show()
-			$('.fllower_zs').show()
-		})
-		// 点击兑换按钮
-		$('.card_convert_zs .btn_convert').click(function(){
-			$('.fllower_zs .inner_position').show()
-			$('.fllower_zs .inner_position .alert_result').show()
 		})
 	</script>
 </body>
