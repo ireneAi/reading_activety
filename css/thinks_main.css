@@ -15,7 +15,7 @@ body{background: #fef7f0}
 .thinks_main h2 i{position:absolute;display:block;background: #fef7f0;padding-right:10px;height: 35px;line-height: 35px;top:0;color:#323232;font-size: 14px;}
 .card_list h2 {text-align: right;height: 35px;margin: 20px 0;position: relative;}
 .card_list h2 i{left:115px;}
-.card_list .card {width:225px;height: 170px;display: inline-block;margin-right: 3px;}
+.card_list .card {width:225px;height: 170px;display: inline-block;margin-right: 3px;margin-bottom: 20px;}
 .card_list .card:last-child{margin-right: 0px;}
 .card_list .card dt{width:225px;background: url(../img/thinks/card_bc.png) no-repeat; height: 129px;}
 .card_list .card dt img {margin:58px 0 0 12px;}
@@ -25,7 +25,7 @@ body{background: #fef7f0}
 .card_list .card .convert_btn img{display: inline-block;float: left}
 
 /*鲜花赠送例表*/
-.flower_list h2 {text-align: right;height: 35px;margin: 40px 0;position: relative;}
+.flower_list h2 {text-align: right;height: 35px;margin: 20px 0 40px;position: relative;}
 .flower_list h2 i{left:100px;}
 .flower_list dl {float:left;text-align: center;width:203px;margin-right: 36px; height: 320px;}
 .flower_list dd {padding:0 15px;}
